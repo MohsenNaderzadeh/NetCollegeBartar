@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="bluedragon.app.netcollegebartar.Views.Activities.BookFullActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/Book_full_Acitivity_AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Book_full_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="8dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/Book_full_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:textColor="@color/splash_background_1"
+                    android:textSize="@dimen/toolbar_title_Font_size"
+                    tools:text="عنوان کلاس" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/BookfullCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@+id/Book_full_Acitivity_AppBarLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/BookFullLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic1"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/fullBookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_x2"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/large_font_size"
+                tools:text="عنوان خبر"/>
+            <TextView
+                android:id="@+id/full_book_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_x2"
+                android:layout_marginLeft="@dimen/standard_margin_x2"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:textSize="@dimen/normal_font_size"
+                tools:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد."/>
+
+           <Button
+               android:id="@+id/DownloadBook"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/selector_departemants"
+               android:textColor="@android:color/white"
+               android:layout_marginRight="@dimen/standard_margin_x2"
+               android:layout_marginLeft="@dimen/standard_margin_x2"
+               android:layout_marginBottom="@dimen/standard_margin_x2"
+               android:text="دانلود کتاب"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

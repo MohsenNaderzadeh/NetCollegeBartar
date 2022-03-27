@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standard_margin_x2"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/userpanel_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_margin_x2">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_gravity="center">
+                <Button
+                    android:id="@+id/userpanel_my_registered_classes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_departemants"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="@dimen/standard_margin_x2"
+                    android:paddingEnd="@dimen/standard_margin_x2"
+                    android:layout_marginRight="@dimen/standard_margin_x2"
+                    android:text="دوره های ثبت نامی من"/>
+                <Button
+                    android:id="@+id/userpanel_edit_my_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_departemants"
+                    android:paddingStart="@dimen/standard_margin_x2"
+                    android:paddingEnd="@dimen/standard_margin_x2"
+                    android:textColor="@android:color/white"
+                    android:text="ویرایش پروفایل"
+                    />
+          </LinearLayout>
+    </FrameLayout>
+    <Button
+        android:id="@+id/Show_Other_Registered_Classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userpanel_frame"
+        android:background="@drawable/selector_departemants"
+        android:paddingStart="@dimen/standard_margin_x2"
+        android:paddingEnd="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin_x2"
+        android:textColor="@android:color/white"
+        android:text="مشاهده سایر دوره های ثبت نام شده"
+        />
+      <Button
+          android:id="@+id/userpanel_logout_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/Show_Other_Registered_Classes"
+          android:background="@drawable/selector_departemants"
+          android:paddingStart="@dimen/standard_margin_x2"
+          android:paddingEnd="@dimen/standard_margin_x2"
+          android:textColor="@android:color/white"
+          android:text="خروج از حساب کاربری"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

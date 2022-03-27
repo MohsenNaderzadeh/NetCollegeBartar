@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Last_News"
+        android:icon="@drawable/ic_news"
+
+        android:title="آخرین خبرها"/>
+    <item
+        android:id="@+id/Library"
+        android:icon="@drawable/ic_library"
+
+        android:title="کتابخانه"/>
+    <item
+        android:id="@+id/image_gallery"
+        android:icon="@drawable/ic_gallery"
+        android:layoutDirection="ltr"
+        android:title="گالری تصاویر"/>
+
+
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/about_us"
+
+        android:title="درباره ما"/>
+    <item
+        android:id="@+id/Contact_with_Us"
+        android:icon="@drawable/contact_us"
+
+        android:title="تماس با ما" />
+    <item
+        android:id="@+id/Exit"
+        android:icon="@drawable/ic_exit"
+
+        android:title="خروج"/>
+
+
+</menu>

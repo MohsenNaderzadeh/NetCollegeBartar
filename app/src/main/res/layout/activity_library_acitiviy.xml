@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bluedragon.app.netcollegebartar.Views.Activities.LibraryAcitiviy">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/LibraryAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_margin_x2">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/LibraryToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="8dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/LibraryToolBarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:textColor="@color/splash_background_1"
+                    android:textSize="@dimen/toolbar_title_Font_size"
+                    android:text="کتابخانه" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <Button
+        android:id="@+id/ProgrammingsBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_departemants"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/LibraryAppBar"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin_x2"
+        android:onClick="onClick"
+        android:text="برنامه نویسی"/>
+    <Button
+        android:id="@+id/Graphic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_departemants"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/ProgrammingsBooks"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin_x2"
+        android:onClick="onClick"
+        android:text="گرافیک و معماری"/>
+    <Button
+        android:id="@+id/WebDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_departemants"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/Graphic"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin_x2"
+        android:onClick="onClick"
+        android:text="طراحی وب سایت"/>
+    <Button
+        android:id="@+id/Network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_departemants"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/WebDesign"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:onClick="onClick"
+        android:text="شبکه"/>
+
+
+
+
+</RelativeLayout>

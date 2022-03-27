@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Skill_Card_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teacher_Profile_Skill_Title_Text_View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:text="مهارتها :"/>
+
+                    <TextView
+                        android:id="@+id/Teacher_Skill_Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        tools:text="Microsoft Solution Expert"
+                        />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/Resume_Card_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Teacher_Profile_Background"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teacher_Profile_Resume_Title_Text_View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:text="سوابق : "/>
+
+                    <TextView
+                        android:id="@+id/Teacher_Resume_Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        tools:text="Microsoft Solution Expert"
+                        />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/Email_Card_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teacher_Email_Address_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:text="پست الکترونیک :"/>
+                    <TextView
+                        android:id="@+id/Teacher_Email_Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        tools:text="barootkar.znu@gmail.com"
+                        />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

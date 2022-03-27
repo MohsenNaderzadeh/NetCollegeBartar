@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="58dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ss.com.bannerslider.Slider
+                android:id="@+id/banner_slider11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:slider_interval="5000"
+                app:slider_loopSlides="true"
+                app:slider_animateIndicators="true"
+                app:slider_indicatorSize="6dp"
+
+                />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/Title_Departeman_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/banner_slider11"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/Departemans_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="دپارتمان ها"
+                        />
+                    <TextView
+                        android:id="@+id/Departemans_show_all_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="مشاهده همه"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="شما به اینترنت متصل نیستید"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible"/>
+                    <ProgressBar
+                        android:id="@+id/Progressbar_departemant"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/departemans_recylcer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/Title_Teachers_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/departemans_recylcer"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/Teachers_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="اساتید"
+                        />
+                    <TextView
+                        android:id="@+id/Teacher_show_all_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="مشاهده همه"
+                        />
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_font_size"
+                    android:text="شما به اینترنت متصل نیستید"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"/>
+                <ProgressBar
+                    android:id="@+id/Progressbar_teacher"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/teachers_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Title_services_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/teachers_recyclerview"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/services_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="سایر رشته ها"
+                        />
+                    <TextView
+                        android:id="@+id/services_show_all_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/large_font_size"
+                        android:text="مشاهده همه"
+                        />
+
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_font_size"
+                    android:text="شما به اینترنت متصل نیستید"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"/>
+                <ProgressBar
+                    android:id="@+id/Progressbar_Other_Major"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/services_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

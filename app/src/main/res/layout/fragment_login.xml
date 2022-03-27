@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/standard_margin_x2"
+    android:gravity="center"
+    >
+
+
+                        <EditText
+                            android:id="@+id/UserName_EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selectoredittextusername"
+                            android:hint="@string/login_username_hint"
+                            android:gravity="right"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:drawableRight="@drawable/ic_account"
+                            android:layout_marginRight="@dimen/standard_margin_x2"
+                            android:layout_marginLeft="@dimen/standard_margin_x2"
+                            android:layout_marginBottom="@dimen/standard_margin"
+                            android:drawablePadding="@dimen/standard_margin"/>
+                        <EditText
+                            android:id="@+id/Password_EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selectoredittextusername"
+                            android:hint="@string/login_password_hint"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:maxLength="35"
+                            android:drawableRight="@drawable/ic_textbox_password"
+                            android:layout_below="@+id/UserName_EditText"
+                            android:layout_marginRight="@dimen/standard_margin_x2"
+                            android:layout_marginLeft="@dimen/standard_margin_x2"
+                            android:layout_marginBottom="@dimen/standard_margin_x2"
+                            android:drawablePadding="@dimen/standard_margin" />
+
+
+                        <ImageButton
+                            android:id="@+id/Show_Password_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_eye_off"
+                            android:background="@null"
+                            android:layout_marginLeft="@dimen/standard_margin"
+                            android:layout_marginBottom="@dimen/standard_margin"
+                            android:visibility="visible"
+                            android:layout_alignStart="@+id/Password_EditText"
+                            android:layout_alignBottom="@+id/Password_EditText" />
+                        <LinearLayout
+                            android:id="@+id/Save_Password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/standard_margin_x2"
+                            android:gravity="center"
+                            android:layout_below="@+id/Password_EditText">
+
+                                <CheckBox
+                                    android:id="@+id/Password_User_Session_Save"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/large_font_size"
+                                    android:text="@string/login_remember_checkbox_text"
+                                    />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/Login_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/standard_margin_x2"
+                            android:layout_marginLeft="@dimen/standard_margin_x2"
+                            android:layout_below="@+id/Save_Password"
+                            android:layout_marginBottom="@dimen/standard_margin_x2"
+                            android:background="@drawable/selector_departemants"
+                            android:textColor="@android:color/white"
+                            android:text="@string/login_btnlogin_text"/>
+
+                        <TextView
+                            android:id="@+id/Account_Question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/large_font_size"
+                            android:textColor="@color/black"
+                            android:text="@string/login_createnewaccount_txt"
+                            android:layout_below="@+id/Login_btn"
+                            android:layout_alignEnd="@+id/Login_btn"
+                            android:layout_marginEnd="34dp" />
+
+                        <TextView
+                            android:id="@+id/Account_Creation_Text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Login_btn"
+                            android:layout_toLeftOf="@+id/Account_Question"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:textSize="@dimen/large_font_size"
+                            android:text="@string/login_newCreation_txt_text"/>
+                </RelativeLayout>
+
+

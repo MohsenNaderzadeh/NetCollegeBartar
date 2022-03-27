@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="bluedragon.app.netcollegebartar">
+
+    <uses-sdk tools:overrideLibrary="co.ronash.pushe" />
+
+    <permission
+        android:name="bluedragon.app.netcollegebartar.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="Bluedragon.App.NetCollegeBartar.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Optional permissions -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Views.Activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="Bluedragon.App.NetCollegeBartar"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="Bluedragon.App.NetCollegeBartar" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_872538619011" />
+        <meta-data
+            android:name="co.ronash.pushe.cr"
+            android:value="Tm9uZQ==" />
+
+        <activity
+            android:name=".Views.Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.Teachers_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.Class_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.OtherServicesfullactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.Teacher_Profile_Acitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.SubmitNewCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.OtherServicesDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.ExClassesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Views.Activities.RegisterFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Views.Activities.LastNewsActivity" />
+        <activity android:name=".Views.Activities.LastNewsFullActivity" />
+        <activity android:name=".Views.Activities.LibraryAcitiviy" />
+        <activity android:name=".Views.Activities.ImageGalleryActivity" />
+        <activity android:name=".Views.Activities.AboutUsActivity" />
+        <activity android:name=".Views.Activities.ContactUsActivity" />
+        <activity android:name=".Views.Activities.BookListActivity" />
+        <activity android:name=".Views.Activities.BookFullActivity" />
+        <activity android:name=".Views.Activities.ImageGalleryFullActivity" />
+        <activity android:name=".Views.Activities.DepartemantsActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/LastNewsCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/LastNewsLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic1"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/Last_News_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_x2"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/large_font_size"
+                android:text="عنوان خبر"/>
+            <TextView
+                android:id="@+id/Last_News_Main_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_x2"
+                android:layout_marginLeft="@dimen/standard_margin_x2"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:textSize="@dimen/normal_font_size"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد."/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/News_Date_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/small_font_size"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="@dimen/standard_margin_x2"
+                    android:layout_marginBottom="@dimen/standard_margin_x2"
+                    android:text="منتشر شده در  :"/>
+                <TextView
+                    android:id="@+id/News_Date_Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/News_Date_Title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_font_size"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    tools:text="1398-05-26"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">نت کالج برتر</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="navigation_drawer_open">باز شدن منوی کشویی</string>
+    <string name="navigation_drawer_close">بستن منوی کشویی</string>
+    <string name="action_back">backbtn</string>
+    <string name="dummy_name">نام دپارتمان</string>
+    <string name="action_departemants_menu">خروج</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="btn_doreh_list_text">برای ثبت نام و مشاهده دوره های در حال برگزاری کلیک کنید</string>
+    <string name="teacher_profile_pop_up_menu">ثبت نظر برای استاد</string>
+    <string name="teacher_warning_txt">کاربر گرامی</string>
+    <string name="login_password_hint">رمزعبور</string>
+    <string name="teacher_warning_main_txt">برای ثبت نظر شما باید وارد حساب کاربری خود شوید و در صورتی که حساب کاربری ندارید باید ثبت نام کنید.</string>
+
+    <string name="other_classes_btn">ثبت نام در دوره</string>
+    <string name="login_username_hint">نام کاربری</string>
+    <string name="login_remember_checkbox_text">مرا به خاطر بسپار</string>
+    <string name="login_btnlogin_text">ورود</string>
+    <string name="login_createnewaccount_txt">حساب کاربری ندارید ؟</string>
+    <string name="login_newCreation_txt_text">ایجاد حساب کاربری</string>
+    <string name="register_phone_number_hint">شماره موبایل</string>
+    <string name="register_password_hint">رمز عبور</string>
+    <string name="register_btn_text">ثبت نام</string>
+    <string name="register_account_having_question">حساب کاربری دارید ؟</string>
+    <string name="register_login_textview">ورود به حساب کاربری</string>
+</resources>

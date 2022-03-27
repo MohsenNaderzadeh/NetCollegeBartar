@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standard_margin_x2">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/User_Comments_Recycler_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/teacher_comment_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/normal_font_size"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:text="نظری برای این استاد ثبت نشده است"/>
+    <ProgressBar
+        android:id="@+id/user_comments_progressbar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/Submit_new_Comment_for_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_departemants"
+        android:textColor="@android:color/white"
+        android:text="ثبت نظر برای این استاد"
+        />
+
+</RelativeLayout>

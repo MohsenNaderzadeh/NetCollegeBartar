@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/standard_margin_x2">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/User_Avatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_avatar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/comment_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_toLeftOf="@+id/User_Avatar"
+
+        android:padding="@dimen/standard_margin_x2"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RatingBar
+                android:id="@+id/User_Rate_To_Teacher"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:isIndicator="true"
+                android:rating="0" />
+
+            <TextView
+                android:id="@+id/UserCommenterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/User_Rate_To_Teacher"
+                android:layout_marginRight="@dimen/standard_margin_x2"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textSize="@dimen/normal_font_size"
+                android:textColor="@android:color/black"
+                tools:text="محسن نادرزاده :"/>
+
+            <TextView
+                android:id="@+id/User_Comment_Text_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/UserCommenterName"
+                android:layout_marginBottom="@dimen/standard_margin_x2"
+                android:layout_marginLeft="@dimen/standard_margin_x2"
+                android:layout_marginRight="@dimen/standard_margin_x2"
+                tools:text="نظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربرنظر کاربر"
+                android:textSize="@dimen/small_font_size" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

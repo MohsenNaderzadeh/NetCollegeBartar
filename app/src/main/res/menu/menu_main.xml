@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Views.Activities.MainActivity">
+
+
+        <item
+        android:id="@+id/action_navigation"
+        android:icon="@drawable/ic_navigation_drawer"
+        android:title="navigation"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Navigation_drawer_header"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/form_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_img_photo"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:src="@drawable/default_avatar"
+        android:layout_alignRight="@+id/Username_txv"
+        android:layout_alignLeft="@+id/Username_txv"
+        android:layout_above="@id/Username_txv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/standard_margin_x2"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin"/>
+
+
+    <TextView
+        android:id="@+id/Email_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Navigation_drawer_header"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:text="example@example.com"
+        android:textSize="@dimen/normal_font_size"
+        />
+    <TextView
+        android:id="@+id/Username_txv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Email_txv"
+        android:layout_alignLeft="@id/Email_txv"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/profile_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:text="کاربر میهمان"
+        android:textSize="@dimen/large_font_size"
+        android:layout_above="@id/Email_txv"
+        />
+</RelativeLayout>

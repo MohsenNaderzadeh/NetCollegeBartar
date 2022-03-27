@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="خانه"
+        android:id="@+id/item_Home"
+        android:icon="@drawable/home" />
+
+    <item
+        android:title="حساب کاربری"
+        android:id="@+id/item_account"
+        android:icon="@drawable/account"/>
+
+
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bluedragon.app.netcollegebartar.Views.Activities.ExClassesListActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/Ex_Class_Appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_margin">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/NetCollege_Tool_Bar_Ex_Class_List"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="8dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/Ex_Class_Details_Toolbar_TxtView_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:textColor="@color/splash_background_1"
+                    android:textSize="@dimen/toolbar_title_Font_size"
+                    tools:text="عنوان کلاس" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ExClassActivityList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ex_Class_Appbar"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/Progressbar_ex_class_list"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/ExClassMessagetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:text="در حال حاضر دوره فعالی برای این کلاس وجود ندارد لطفا در زمان دیگری مراجعه بفرمایید"/>
+</RelativeLayout>

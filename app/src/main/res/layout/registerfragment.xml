@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standard_margin_x2"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/register_user_phone_number_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectoredittextusername"
+        android:hint="@string/register_phone_number_hint"
+        android:gravity="right"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ic_phone_number"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:inputType="phone"
+        android:drawablePadding="@dimen/standard_margin"/>
+    <EditText
+        android:id="@+id/register_user_password_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectoredittextusername"
+        android:hint="@string/register_password_hint"
+        android:gravity="right"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ic_textbox_password"
+        android:layout_below="@+id/register_user_phone_number_ed"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:layout_marginBottom="@dimen/standard_margin_x2"
+        android:drawablePadding="@dimen/standard_margin" />
+
+
+    <ImageButton
+        android:id="@+id/register_Show_Password_ImV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_eye_off"
+        android:background="@null"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:visibility="visible"
+        android:layout_alignStart="@+id/register_user_password_ed"
+        android:layout_alignBottom="@+id/register_user_password_ed" />
+
+
+    <Button
+        android:id="@+id/Register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/standard_margin_x2"
+        android:layout_marginLeft="@dimen/standard_margin_x2"
+        android:layout_below="@+id/register_user_password_ed"
+        android:layout_marginBottom="@dimen/standard_margin_x2"
+        android:background="@drawable/selector_departemants"
+        android:textColor="@android:color/white"
+        android:text="@string/register_btn_text"/>
+
+    <TextView
+        android:id="@+id/Account_Having_Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/black"
+        android:text="@string/register_account_having_question"
+        android:layout_below="@+id/Register_btn"
+        android:layout_alignEnd="@+id/Register_btn"
+        android:layout_marginEnd="34dp" />
+
+    <TextView
+        android:id="@+id/Account_login_Text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_btn"
+        android:layout_toLeftOf="@+id/Account_Having_Question"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:textSize="@dimen/large_font_size"
+        android:text="@string/register_login_textview"/>
+
+</RelativeLayout>
