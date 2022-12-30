@@ -5,7 +5,7 @@ NetCollegeBartar
 
 
 
-## Project Summery:
+## Project Summery
 
 A simple Commercial Android application that was developed for an institute As a final Project of Associate degree. By this app a user can register and see the list of classes and teachers profile and register in his/her favorite course or class. 
 
